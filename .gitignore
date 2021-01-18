@@ -1,2 +1,5 @@
 # Project exclude paths
 /target/
+/src/main/java/com/ankoki/ankobot/gitignore/
+/.idea/
+/Ankobot.iml

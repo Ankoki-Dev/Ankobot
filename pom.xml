@@ -20,6 +20,7 @@
                             <mainClass>com.ankoki.ankobot.Ankobot</mainClass>
                         </transformer>
                     </transformers>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
                 </configuration>
                 <executions>
                     <execution>
