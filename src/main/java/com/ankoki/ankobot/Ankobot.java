@@ -1,6 +1,8 @@
 package com.ankoki.ankobot;
 
 import com.ankoki.ankobot.commands.BotCommand;
+import com.ankoki.ankobot.commands.DownloadCommand;
+import com.ankoki.ankobot.commands.LatestCommand;
 import com.ankoki.ankobot.commands.RulesCommand;
 import com.ankoki.ankobot.listeners.CommandListener;
 import com.ankoki.ankobot.listeners.PingListener;
@@ -70,6 +72,8 @@ public class Ankobot extends ListenerAdapter {
     private void registerGuildCommands() {
         GUILD_COMMANDS.add(new RulesCommand());
         GUILD_COMMANDS.add(new BotCommand());
+        GUILD_COMMANDS.add(new DownloadCommand());
+        GUILD_COMMANDS.add(new LatestCommand());
     }
 
     private void registerPrivateCommands() {

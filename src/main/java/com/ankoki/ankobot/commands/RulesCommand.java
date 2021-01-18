@@ -10,11 +10,10 @@ import net.dv8tion.jda.api.entities.MessageEmbed.Field;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
-import java.util.Date;
 
 public class RulesCommand implements GuildCommand {
 
-    private MessageEmbed RULES_EMBED(User user, Date date) {
+    private MessageEmbed RULES_EMBED(User user) {
         return new MessageEmbed(null, "Server Rules",
                 null, null, null, Secrets.COLOUR.getRGB(),
                 null, null, null, null,
@@ -62,7 +61,7 @@ public class RulesCommand implements GuildCommand {
 
     @Override
     public void onCommand(Guild guild, User user, TextChannel channel, String[] args, Message message) {
-        channel.sendMessage(RULES_EMBED(user, new Date())).queue();
+        channel.sendMessage(RULES_EMBED(user)).queue();
     }
 
     @Override

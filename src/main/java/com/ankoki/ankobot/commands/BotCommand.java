@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.*;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Arrays;
 import java.util.Collections;
 
 public class BotCommand implements GuildCommand {

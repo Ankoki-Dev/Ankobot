@@ -1,18 +1,14 @@
 package com.ankoki.ankobot.listeners;
 
 import com.ankoki.ankobot.gitignore.Secrets;
+import com.ankoki.ankobot.utilities.Const;
 import com.ankoki.ankobot.utilities.Embed;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class PingListener extends ListenerAdapter {
-    private static final DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
 
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
@@ -37,7 +33,7 @@ public class PingListener extends ListenerAdapter {
                                 null,
                                 null,
                                 new MessageEmbed.Footer(
-                                        member.getEffectiveName() + " | " + dateFormat.format(new Date()),
+                                        member.getEffectiveName() + " | " + Const.formattedNow(),
                                         null, null),
                                 null,
                                 null))
