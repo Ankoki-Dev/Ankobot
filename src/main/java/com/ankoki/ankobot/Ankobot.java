@@ -1,10 +1,8 @@
 package com.ankoki.ankobot;
 
-import com.ankoki.ankobot.commands.BotCommand;
-import com.ankoki.ankobot.commands.DownloadCommand;
-import com.ankoki.ankobot.commands.LatestCommand;
-import com.ankoki.ankobot.commands.RulesCommand;
+import com.ankoki.ankobot.commands.*;
 import com.ankoki.ankobot.listeners.CommandListener;
+import com.ankoki.ankobot.listeners.LogListener;
 import com.ankoki.ankobot.listeners.PingListener;
 import com.ankoki.ankobot.managers.GuildCommand;
 import com.ankoki.ankobot.managers.PrivateCommand;
@@ -53,7 +51,8 @@ public class Ankobot extends ListenerAdapter {
         try {
             JDABuilder.createLight(token, GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES, GatewayIntent.GUILD_MESSAGE_REACTIONS, GatewayIntent.DIRECT_MESSAGE_REACTIONS, GatewayIntent.GUILD_BANS, GatewayIntent.GUILD_MEMBERS)
                     .addEventListeners(new CommandListener(jda),
-                            new PingListener())
+                            new PingListener(),
+                            new LogListener())
                     .setActivity(Activity.listening("to Jay's clacky ass keyboard"))
                     .setMemberCachePolicy(MemberCachePolicy.ALL)
                     .enableIntents(GatewayIntent.GUILD_MEMBERS)
@@ -74,6 +73,9 @@ public class Ankobot extends ListenerAdapter {
         GUILD_COMMANDS.add(new BotCommand());
         GUILD_COMMANDS.add(new DownloadCommand());
         GUILD_COMMANDS.add(new LatestCommand());
+        GUILD_COMMANDS.add(new SucksCommand());
+        GUILD_COMMANDS.add(new PurgeCommand());
+        GUILD_COMMANDS.add(new EchoCommand());
     }
 
     private void registerPrivateCommands() {

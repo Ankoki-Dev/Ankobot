@@ -38,6 +38,9 @@ public class PingListener extends ListenerAdapter {
                                 null,
                                 null))
                         .queue();
+            } else if (member.getIdLong() == 800767264370458644L) {
+                e.getMessage().delete();
+                e.getChannel().sendMessage(Embed.simple("Don't ping me cunt", e.getAuthor())).queue();
             }
         }
     }
