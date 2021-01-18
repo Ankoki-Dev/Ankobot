@@ -62,7 +62,13 @@ public class PurgeCommand implements GuildCommand {
                 isWorking = false;
                 channel.sendMessage(Embed.simple(":no_entry_sign: No messages to delete!", user));
             } else {
-                channel.deleteMessages(messages).complete();
+                try {
+                    channel.deleteMessages(messages).complete();
+                } catch (IllegalArgumentException ex) {
+                    channel.sendMessage(Embed.simple(":no_entry_sign: Some messages are older than 2 weeks and cannot be deleted!", user)).queue();
+                    isWorking = false;
+                    return;
+                }
                 isWorking = false;
                 channel.sendMessage(Embed.simple(":white_check_mark: " + (i - 1) + " messages were purged successfully!", user)).queue();
             }
