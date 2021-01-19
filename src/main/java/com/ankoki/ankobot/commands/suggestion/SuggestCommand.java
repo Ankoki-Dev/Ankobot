@@ -45,6 +45,6 @@ public class SuggestCommand implements PrivateCommand {
 
     @Override
     public String[] getAliases() {
-        return new String[]{"suggest"};
+        return new String[]{"suggest", "suggestion"};
     }
 }
