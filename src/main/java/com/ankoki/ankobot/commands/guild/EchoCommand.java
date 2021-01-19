@@ -1,4 +1,4 @@
-package com.ankoki.ankobot.commands;
+package com.ankoki.ankobot.commands.guild;
 
 import com.ankoki.ankobot.managers.GuildCommand;
 import com.ankoki.ankobot.utilities.StringUtils;

@@ -12,6 +12,6 @@ public final class Const {
     private static final DateFormat format = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
 
     public static String formattedNow() {
-        return format.format(new Date());
+        return format.format(new Date()) + " GMT";
     }
 }
