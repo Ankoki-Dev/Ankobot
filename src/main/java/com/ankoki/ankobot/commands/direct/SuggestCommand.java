@@ -1,4 +1,4 @@
-package com.ankoki.ankobot.commands.suggestion;
+package com.ankoki.ankobot.commands.direct;
 
 import com.ankoki.ankobot.Ankobot;
 import com.ankoki.ankobot.gitignore.Secrets;

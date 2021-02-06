@@ -1,7 +1,7 @@
 package com.ankoki.ankobot;
 
 import com.ankoki.ankobot.commands.guild.*;
-import com.ankoki.ankobot.commands.suggestion.SuggestCommand;
+import com.ankoki.ankobot.commands.direct.SuggestCommand;
 import com.ankoki.ankobot.listeners.*;
 import com.ankoki.ankobot.managers.GuildCommand;
 import com.ankoki.ankobot.managers.PrivateCommand;
