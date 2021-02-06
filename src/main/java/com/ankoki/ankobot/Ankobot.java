@@ -6,7 +6,6 @@ import com.ankoki.ankobot.listeners.*;
 import com.ankoki.ankobot.managers.GuildCommand;
 import com.ankoki.ankobot.managers.PrivateCommand;
 import com.ankoki.ankobot.gitignore.Secrets;
-import lombok.Getter;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
@@ -69,7 +68,6 @@ public class Ankobot extends ListenerAdapter {
         instance.registerGuildCommands(new RulesCommand(),
                 new BotCommand(),
                 new DownloadCommand(),
-                new SucksCommand(),
                 new PurgeCommand(),
                 new EchoCommand());
         instance.registerPrivateCommands(new SuggestCommand());

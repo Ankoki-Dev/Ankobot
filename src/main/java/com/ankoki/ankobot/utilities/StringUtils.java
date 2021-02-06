@@ -1,19 +1,14 @@
 package com.ankoki.ankobot.utilities;
 
+import java.util.Arrays;
+
 public class StringUtils {
 
     public static String arrayAsString(String[] args) {
-        String argsAsString = "";
-        int i = 1;
-        for (String s : args) {
-            if (i == args.length) {
-                argsAsString += s;
-            } else {
-                argsAsString += s + " ";
-            }
-            i++;
-        }
-        return argsAsString;
+        StringBuilder builder = new StringBuilder();
+        Arrays.stream(args).forEach(arg -> builder.append(arg).append(" "));
+        builder.setLength(builder.length() - 1);
+        return builder.toString();
     }
 
     public static String getCommandName(String args, String prefix) {
