@@ -10,6 +10,7 @@ import net.dv8tion.jda.api.entities.User;
 import org.jetbrains.annotations.Nullable;
 
 public class SucksCommand implements GuildCommand {
+
     @Override
     public void onCommand(Guild guild, User user, TextChannel channel, String[] args, Message message) {
         channel.sendMessage(StringUtils.arrayAsString(args) + " sucks by the way.").queue();

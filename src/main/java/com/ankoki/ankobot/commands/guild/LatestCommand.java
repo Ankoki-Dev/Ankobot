@@ -22,6 +22,10 @@ public class LatestCommand implements GuildCommand {
             return;
         }
         switch (args[0].toLowerCase()) {
+            case "skjade":
+                String skJadeVer = getLatestTag("Ankoki-Dev", "SkJade");
+                channel.sendMessage(Embed.simple(":white_check_mark: SkJade is currently on v" + skJadeVer + "!", user)).queue();
+                break;
             case "elementals":
                 String elementalsVer = getLatestTag("Ankoki-Dev", "Elementals");
                 channel.sendMessage(Embed.simple(":white_check_mark: Elementals is currently on v" + elementalsVer + "!", user)).queue();

@@ -8,6 +8,6 @@ public class JoinListener extends ListenerAdapter {
 
     @Override
     public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent e) {
-        e.getMember().getRoles().add(e.getGuild().getRoleById(747943031331618912L));
+        e.getMember().getRoles().add(e.getGuild().getRolesByName("Member", true).get(0));
     }
 }

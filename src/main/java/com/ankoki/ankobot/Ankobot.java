@@ -56,7 +56,7 @@ public class Ankobot extends ListenerAdapter {
                             new LogListener(),
                             new JoinListener(),
                             new SuggestionHandler())
-                    .setActivity(Activity.listening("Jay's clacky ass keyboard"))
+                    .setActivity(Activity.watching("you;)"))
                     .setMemberCachePolicy(MemberCachePolicy.ALL)
                     .enableIntents(GatewayIntent.GUILD_MEMBERS)
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)

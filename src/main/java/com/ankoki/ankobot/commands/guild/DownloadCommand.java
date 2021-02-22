@@ -18,6 +18,10 @@ public class DownloadCommand implements GuildCommand {
             return;
         }
         switch (args[0].toLowerCase()) {
+            case "skjade":
+                channel.sendMessage(Embed.simple(":white_check_mark: Here is the download link to SkJade!", user)).queue();
+                channel.sendMessage("https://www.spigotmc.org/resources/skjade.89127/").queue();
+                break;
             case "elementals":
                 channel.sendMessage(Embed.simple(":white_check_mark: Here is the download link to Elementals!", user)).queue();
                 channel.sendMessage("https://www.spigotmc.org/resources/elementals.87962/").queue();
