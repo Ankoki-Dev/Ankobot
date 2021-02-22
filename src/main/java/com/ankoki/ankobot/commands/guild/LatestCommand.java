@@ -36,6 +36,7 @@ public class LatestCommand implements GuildCommand {
                 break;
             default:
                 channel.sendMessage(Embed.simple(":no_entry_sign: This isn't one of my plugins!", user)).queue();
+                channel.sendMessage("If this plugin exists, it'll be here -> <https://www.github.com/Ankoki-Dev/" + args[0].toLowerCase() + ">!").queue();
         }
     }
 
