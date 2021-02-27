@@ -23,7 +23,7 @@ public class BotCommand implements GuildCommand {
                 null,
                 null,
                 null,
-                new MessageEmbed.Footer(user.getName() + " | " + Const.formattedNow() + " GMT", null, null),
+                new MessageEmbed.Footer(user.getName() + " | " + Const.formattedNow(), null, null),
                 null,
                 Collections.singletonList(new MessageEmbed.Field("The source code of Ankobot is public!",
                         "If you want to know how this bot works and see the code, you can visit " +

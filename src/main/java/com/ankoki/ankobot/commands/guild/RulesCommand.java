@@ -17,7 +17,7 @@ public class RulesCommand implements GuildCommand {
         return new MessageEmbed(null, "Server Rules",
                 null, null, null, Secrets.COLOUR.getRGB(),
                 null, null, null, null,
-                new Footer(user.getName() + " | " + Const.formattedNow() + " GMT", null, null), null,
+                new Footer(user.getName() + " | " + Const.formattedNow(), null, null), null,
                 Arrays.asList(new Field("[Rules]", "These are the rules you need to follow " +
                                 "to be able to stay in this discord and this community " +
                                 "as we want to keep this a safe space.", false),

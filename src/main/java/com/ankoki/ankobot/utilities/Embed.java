@@ -17,7 +17,7 @@ public class Embed {
         Date date = new Date();
         return new MessageEmbed(null, null, message, null, null,
                 Secrets.COLOUR.getRGB(), null, null, null,
-                null, new Footer(user.getName() + " | " + Const.formattedNow() + " GMT",
+                null, new Footer(user.getName() + " | " + Const.formattedNow(),
                 null, null), null, null);
     }
 

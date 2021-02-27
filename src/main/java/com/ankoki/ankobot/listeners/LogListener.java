@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
 import java.util.Collections;
 
 public class LogListener extends ListenerAdapter {
