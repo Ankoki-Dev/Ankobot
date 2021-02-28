@@ -68,6 +68,7 @@ public class Ankobot extends ListenerAdapter {
         instance.registerGuildCommands(new RulesCommand(),
                 new BotCommand(),
                 new DownloadCommand(),
+                new LatestCommand(),
                 new PurgeCommand(),
                 new EchoCommand());
         instance.registerPrivateCommands(new SuggestCommand());
