@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 public class RulesCommand implements GuildCommand {
 
-    private MessageEmbed RULES_EMBED(User user) {
+    private static MessageEmbed RULES_EMBED(User user) {
         return new MessageEmbed(null, "Server Rules",
                 null, null, null, Secrets.COLOUR.getRGB(),
                 null, null, null, null,

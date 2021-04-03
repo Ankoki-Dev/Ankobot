@@ -70,7 +70,8 @@ public class Ankobot extends ListenerAdapter {
                 new DownloadCommand(),
                 new LatestCommand(),
                 new PurgeCommand(),
-                new EchoCommand());
+                new EchoCommand(),
+                new WelcomeCommand());
         instance.registerPrivateCommands(new SuggestCommand());
         System.out.printf("Bot was enabled in %.2f seconds!%n", (float) System.currentTimeMillis() - start);
         System.out.println("Invite Ankobot through this link: " + Secrets.BOT_INVITE);
